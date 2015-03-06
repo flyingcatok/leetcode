@@ -2,6 +2,12 @@ package leetcode.sameTree;
 
 import leetcode.common.TreeNode;
 
+/**
+ * Given two binary trees, write a function to check if they are equal or not.
+ * Two binary trees are considered equal if they are structurally identical and the nodes have the same value.
+ * @author feiyu
+ * @since March 6, 2015
+ */
 public class Problem100 {
 
 	public static void main(String[] args) {
