@@ -15,12 +15,12 @@ public class Solution {
 			return false;
 		}
 		// p,q not null
-		if(p.val != q.val){
-			return false;
-		}else{
-			return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
-		}
-		
+//		if(p.val != q.val){
+//			return false;
+//		}else{
+//			return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+//		}
+		return p.val == q.val && isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
     }
 	
 }
