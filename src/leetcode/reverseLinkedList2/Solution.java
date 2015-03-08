@@ -65,8 +65,7 @@ public class Solution {
                 second = curr;
                 begin.next = second;
             }else{
-                curr = curr.next;
-                prev = prev.next;
+            	break;
             }
             
         }
