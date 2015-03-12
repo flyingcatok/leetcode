@@ -3,6 +3,7 @@ package leetcode.validateBST;
 import leetcode.common.TreeNode;
 
 /**
+ * drawback: when root = min or max
  * ref:http://blog.csdn.net/linhuanmars/article/details/23810735
  * @since March 12, 2015
  */
