@@ -18,7 +18,7 @@ public class Solution {
         	else if(mid>0 && num[mid-1] > num[mid]){
         		right = mid-1;
         	}else{
-        		left = mid+1;
+        		left = mid+1;// if mid = 0, and num[mid] < num[mid+1], search right half
         	}
         }
         return -1;
