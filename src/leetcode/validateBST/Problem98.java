@@ -17,6 +17,7 @@ public class Problem98 {
 		root.left.right = new TreeNode(4);
 		
 		System.out.println(Solution.isValidBST(root));
+		System.out.println(Solution2.isValidBST(root));
 	}
 
 }
