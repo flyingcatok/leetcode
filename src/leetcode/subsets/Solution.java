@@ -29,7 +29,7 @@ public class Solution {
 			path.add(num[i]);
 			// given the current element in the set, repeat the procedure
 			subsetsHelper(result, path, num, i+1);
-			// remove last added element
+			// remove last added element, backtracking
 			path.remove(path.size()-1);
 		}
 	}
