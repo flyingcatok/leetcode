@@ -22,10 +22,10 @@ public class Solution2 {
         
         if(target <= A[start]){
             return start;
-        }else if(target <= A[end]){
-            return end;
+        }else if(target > A[end]){
+            return end + 1;
         }else{
-            return end+1;
+            return end;
         }
     
     }
