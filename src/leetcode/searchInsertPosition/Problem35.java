@@ -17,8 +17,8 @@ public class Problem35 {
 		array[3] = 6;
 		System.out.println("5: "+Solution.searchInsert(array, 5));
 		System.out.println("2: "+Solution.searchInsert(array, 2));
-		System.out.println("7: "+Solution.searchInsert(array, 7));
-		System.out.println("0: "+Solution.searchInsert(array, 0));
+		System.out.println("7: "+Solution2.searchInsert(array, 7));
+		System.out.println("0: "+Solution2.searchInsert(array, 0));
 	}
 
 }
