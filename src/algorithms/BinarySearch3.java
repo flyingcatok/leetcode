@@ -1,15 +1,14 @@
 package algorithms;
 
 /**
- * another point of view of binary search. find the first position of target.
- * this method need to extra check boundary, 
- * which is good when dealing with possible index out of bound.
+ * this binary search find the last position of target in a sorted array.
  * @author feiyu
- * @since March 11, 2015
+ * @since March 25, 2015
  */
-public class BinarySearch2 {
+public class BinarySearch3 {
 
 	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		int[] array = new int[7];
 		for(int i=0;i<7;i++){
 			array[i] = i;
@@ -17,9 +16,9 @@ public class BinarySearch2 {
 		array[3]=2;
 		System.out.println(binarySearch(array, 2));
 	}
-
+	
 	/**
-	 * find the first position of target.
+	 * find the last position of target.
 	 * @param A sorted array
 	 * @param target
 	 * @return index
@@ -30,7 +29,7 @@ public class BinarySearch2 {
 		while(start +1 < end){	// not start <= end
 			int mid = start+(end-start)/2;
 			if(A[mid]==target){
-				end = mid;// first position
+				start = mid;// last position
 			}else if(A[mid] > target){
 				end = mid; // not -1
 			}else{
@@ -38,14 +37,15 @@ public class BinarySearch2 {
 			}
 		}
 		// extra check boundary
-		// find first position, check start first
-		if(A[start] == target){
-			return start;
-		}
+		// find last position, check end first
 		if(A[end] == target){
 			return end;
+		}
+		if(A[start] == target){
+			return start;
 		}
 		return -1;
 
 	}
+
 }
