@@ -21,6 +21,7 @@ public class Problem86 {
 		head.next.next.next.next.next = new ListNode(2);
 		
 		System.out.println(Solution.partition(head, 3));
+		System.out.println(Solution2.partition(head, 3));
 		
 	}
 
