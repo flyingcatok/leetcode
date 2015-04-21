@@ -1,4 +1,4 @@
-package others.lowestCommonAncestor;
+package lintcode.lowestCommonAncestor;
 
 import leetcode.common.TreeNode;
 
