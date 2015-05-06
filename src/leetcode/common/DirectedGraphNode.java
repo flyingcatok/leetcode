@@ -15,4 +15,8 @@ public class DirectedGraphNode {
 		label = x;
 		neighbors = new ArrayList<DirectedGraphNode>();
 	}
+	
+	public String toString(){
+		return ""+label;
+	}
 }
